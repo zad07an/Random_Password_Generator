@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111111;
+}
+
+.generator_app {
+  width: 650px;
+  background: #fafafafa;
+  padding: 10px;
+}
+
+.app_header {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.app_header > input {
+  border: 1px solid #111111;
+  outline: 0;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.app_header > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  cursor: pointer;
+  background: #111111;
+  color: goldenrod;
+}
+
+.quality_box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px 0;
+}
+
+.quality_bar {
+  width: 100%;
+  height: 4px;
+  background: #111111;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.quality_line {
+  width: 35%;
+  height: 100%;
+  background: red;
+  transition: 0.1s linear;
+}
+
+.quality_text {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quality_text > p {
+  font-size: 18px;
+}
+
+.settings_title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.settings_title > p {
+  font-size: 24px;
+}
+
+.range_box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 10px;
+}
+
+.range_info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.range_info > p {
+  font-size: 18px;
+}
+
+.range_box > input {
+  width: 100%;
+  accent-color: #0e67af;
+  cursor: pointer;
+}
+
+.app_settings {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 30px 0;
+}
+
+.app_settings > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.app_settings > div > input {
+  width: 14px;
+  height: 14px;
+  accent-color: green;
+  cursor: pointer;
+}
+
+.app_settings > div > label {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.generate_box {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.generate_box > button {
+  font-size: 18px;
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
